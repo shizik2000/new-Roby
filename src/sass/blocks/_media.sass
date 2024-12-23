@@ -1,0 +1,480 @@
+@media (max-width: 1200px)
+    header
+        .roby
+            margin-left: 380px
+        .gmail
+            &_agency
+                width: 287px
+        .menu
+            padding-left: 403px
+
+    .promo
+        &__box
+            grid-template-columns: 660px 530px
+            grid-template-rows: 375px
+        &__img
+            width: 95%
+        &__work
+            margin-left: 670px
+
+    .startup
+        .containers
+            width: 1100px
+
+    .awards
+        .containers
+            width: 1100px
+
+    .work
+        .containers
+            width: 1100px
+        &-list
+            padding: 0 50px
+
+    .improve
+        .containers
+            width: 1100px
+        &-img
+            width: 55%
+
+    .review
+        &__carousel
+            &-title
+                width: auto
+                font-size: 15px
+            .public
+                width: auto
+            &-img
+                margin-left: 80px
+    
+    .skills
+        &-rectangle
+            padding: 70px 125px 0 125px
+            &__title
+                font-size: 47px
+                margin-bottom: 50px
+            &__item
+                margin-left: 25px
+        &-img
+            width: 47%
+            height: 111vh
+
+    .fact
+        .containers
+            width: 1100px
+        &__lines
+            .nummedal::before
+                left: 90px
+            .numbrackets::before
+                left: 29.5%
+            .numcoffee::before
+                left: 74.5%
+
+    .blog
+        .containers
+            width: 1100px
+        &__header
+            width: 1100px
+        &__view
+            right: 30px
+        &__post
+            margin-left: 30px
+            &-img
+                width: 85%
+            &-type
+                width: 80px
+            &-text
+                font-size: 24px
+
+    .talk
+        width: 80%
+        .containers
+            width: 1000px
+        &__designer
+            right: 100px
+
+    footer
+        .containers
+            width: 1100px
+
+@media (max-width: 992px)
+    header
+        .container
+            padding-left: 50px
+        .menu
+            width: 366px
+            padding-left: 240px
+        .roby
+            margin-left: 290px
+
+    .promo
+        &__box
+            grid-template-columns: 590px 435px
+        &__title
+            width: 395px
+            font-size: 45px
+            span
+                font-size: 35px
+        &__work
+            margin-left: 600px
+
+    .startup
+        .containers
+            width: 920px
+        &_img
+            width: 100%
+            margin-left: 10px
+
+    .awards
+        .containers
+            width: 920px
+        &-perfect
+            &__main
+                font-size: 55px
+                span
+                    font-size: 49px
+    
+    .work
+        .containers
+            width: 920px
+        .top
+            margin-top: 20px
+        .bottom
+            margin-top: 20px
+
+    .improve
+        margin-bottom: 130px
+        .containers
+            width: 920px
+        &-title
+            padding-top: 50px
+            font-size: 43px
+            span
+                font-size: 43px
+        &-subtext
+            font-size: 18px
+
+    .review
+        &-title
+            margin-bottom: 50px
+        &__carousel
+            margin-bottom: 100px
+            &-img
+                margin-left: 45px
+
+    .skills
+        &-rectangle
+            padding: 70px 50px 0 47px
+            &__title
+                width: 400px
+        &-img
+            width: 49%
+            height: 106vh
+    
+    .fact
+        .containers
+            width: 920px
+        &__lines
+            .nummedal::before
+                left: 50px
+            .numbrackets::before
+                left: 27%
+            .numcoffee::before
+                left: 73%
+
+    .blog
+        .containers
+            width: 920px
+        &__header
+            width: 920px
+        &__title
+            margin-left: 30px
+        &__view
+            right: 0
+            left: 80%
+        &__post
+            &-text
+                width: 270px
+                font-size: 20px
+
+    .talk
+        padding-left: 100px
+        padding-right: 98px
+        .containers
+            width: 800px
+
+    footer
+        .containers
+            width: 920px
+    
+@media (max-width: 768px)
+    html
+        scrollbar-width: none
+    
+    header
+        .roby
+            margin-left: 180px
+            z-index: 5
+        .menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 30%
+            height: 100vh
+            padding: 20px 15px
+            background-color: rgba(0,0,0, .8)
+            transition: 0.6s all
+            z-index: 10
+            a
+                color: #ffffff
+                span
+                    color: #b6b6b6
+            &_active 
+                left: 0
+            &_item 
+                padding-right: 0
+                border: none
+                margin: 10px 0
+            &_link 
+                font-size: 20px
+        .hamburger
+            display: block
+            position: absolute
+            right: 40px
+            top: 10%
+            transform: translateY(-50%)
+            width: 26px
+            height: 12px
+            span 
+                display: block 
+                height: 2px
+                width: 100%
+                background-color: #000000 
+                margin-bottom: 2px
+                transition: 0.5s all
+            &_active 
+                span 
+                    margin-bottom: -2px 
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+
+    .promo
+        background: url('../img/Main-img.jpg') center / cover no-repeat, $overlay-color
+        background-blend-mode: darken
+        height: 500px
+        margin-bottom: 80px
+        &__box
+            display: block
+        &__img
+            display: none
+        &__title
+            width: 440px
+            margin-left: 155px
+            color: #ffffff
+            text-align: center
+        &__work
+            margin-top: 40px
+            margin-left: 310px
+
+    .startup
+        .containers
+            width: 700px
+
+    .awards
+        .containers
+            width: 700px
+        &-perfect
+            &__main
+                text-align: center
+            &__text
+                margin-bottom: 90%
+            p
+                margin-left: 150px
+                text-align: center
+        &__list
+            top: 480px
+            right: 190px
+
+    .work
+        margin-bottom: 50px
+        .containers
+            width: 700px
+
+    .improve
+        margin-bottom: 100px
+        text-align: center
+        .containers
+            width: 700px
+        &-title
+            width: 470px
+            margin-left: 110px
+        &-subtext
+            margin-left: 145px
+        img
+            display: none
+    
+    .skills
+        &-rectangle
+            padding: 70px 125px 70px 200px
+        img
+            display: none
+
+    .fact
+        margin-bottom: 100px
+        .containers
+            width: 700px
+        &__lines
+            display: grid
+            grid-template-columns: 300px 135px
+            justify-content: center
+            &-year
+                margin-bottom: 30px
+            .nummedal::before
+                left: 135px
+            .numbrackets::before
+                left: 53.5%
+            .numcoffee::before
+                left: 54%
+
+    .blog
+        margin-bottom: 60px
+        &__header
+            width: 700px
+        .containers
+            width: 700px
+        &__view
+            left: 75%
+        &__post
+            flex-direction: column
+            align-items: center
+            &-box
+                margin-bottom: 30px
+            &-type
+                width: 90px
+            &-text
+                width: 350px
+                font-size: 26px
+
+    .talk
+        padding-left: 53.5px
+        padding-right: 100px
+        padding-bottom: 65px
+        .containers
+            width: 700px
+        &__big
+            font-size: 75px
+        &__designer
+            right: 60px
+
+    footer
+        .containers
+            width: 700px
+
+@media (max-width: 576px)
+    header
+        .menu
+            width: 45%
+        .roby
+            margin-top: 70px
+            margin-left: 100px
+
+    .promo
+        &__title
+            margin-left: 80px
+        &__work
+            margin-left: 220px
+
+    .startup
+        .containers
+            width: 530px
+
+    .awards
+        .containers
+            width: 530px
+        &-perfect
+            width: 530px
+            &__main
+                font-size: 40px
+                span
+                    font-size: 40px
+            &__text
+                margin-bottom: 110%
+            p
+                margin-left: 75px
+        &__list
+            top: 450px
+            right: 100px
+
+    .work
+        .containers
+            width: 530px
+        &-list
+            padding-left: 30px
+
+    .improve
+        .containers
+            width: 530px
+        &-title
+            margin-left: 30px
+        &-subtext
+            margin-left: 60px
+
+    .skills
+        &-rectangle
+            padding-left: 90px
+            padding-right: 80px
+
+    .fact
+        .containers
+            width: 530px
+        &__lines
+            grid-template-columns: 155px 125px
+            justify-content: space-around
+            .nummedal::before
+                left: 55px
+            .numbrackets::before
+                left: 53.5%
+            .numcoffee::before
+                left: 54%
+
+    .blog
+        .containers
+            width: 530px
+        &__header
+            width: 530px
+        &__title
+            margin-left: 20px
+            font-size: 50px
+            span
+                font-size: 50px
+        &__view
+            left: 70%
+        &__post
+            margin-left: 40px
+
+    .talk
+        padding-left: 49.8px
+        padding-right: 65px
+        padding-bottom: 65px
+        .containers
+            width: 450px
+        &__big
+            font-size: 65px
+        &__free
+            font-size: 19px
+        &__designer
+            right: 50px
+
+    footer
+        .containers
+            width: 530px
+        &__line
+            &-sitemap
+                margin-left: 30px
