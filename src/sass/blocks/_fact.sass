@@ -1,0 +1,47 @@
+.fact
+	margin-bottom: 150px
+	&__title
+		font-size: 48px
+		font-weight: 700
+		margin-bottom: 56px
+		text-transform: uppercase
+		text-align: center
+		span
+			font-size: 37px
+			font-weight: 400
+	&__lines
+		display: flex
+		justify-content: space-around
+		&-number
+			position: relative
+			font-size: 53px
+			font-weight: 700
+			line-height: 50px
+		.nummedal::before
+			content: ''
+			position: absolute
+			display: block
+			width: 25px
+			height: 50px
+			left: 200px
+			background: url('../icons/facts/Medal.svg') center (center / cover) no-repeat
+		.numbrackets::before
+			content: ''
+			position: absolute
+			display: block
+			width: 50px
+			height: 40px
+			left: 32.5%
+			background: url('../icons/facts/Brackets.svg') center (center / cover) no-repeat
+		.numcoffee::before
+			content: ''
+			position: absolute
+			display: block
+			width: 45px
+			height: 45px
+			left: 72%
+			background: url('../icons/facts/Coffee.svg') center (center / cover) no-repeat
+		&-text
+			font-size: 19px
+			font-weight: 400
+			color: $main-color
